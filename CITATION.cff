@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "cfDNA CNV caller"
+version: 1.0.2
+date-released: 2026-10-16
+abstract: "Rule-based copy-number-variation calling for hg38 autosomal QDNAseq log2 ratios in 100 kb bins."
+license: MIT
+authors:
+  - family-names: Jeon
+    given-names: Yujin
