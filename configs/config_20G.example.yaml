@@ -1,0 +1,55 @@
+depth_label: 20G
+qdnaseq:
+  bin_size: 100
+  genome: hg38
+splits:
+  primary_split_col: Split_AgeSexStage
+paths:
+  work_dir: ../work
+  meta_xlsx: ../data/metadata.xlsx
+  meta_sheet: samples
+  qdnaseq_matrix: ../data/controls_20G.tsv
+  pon_reference: ../references/pon_reference_20G.npz
+  out_dir: ../results/20G
+caller:
+  anchor_tol: 0.02
+  smooth_window: 11
+  z_call_thr: 2.5
+  z_lo_thr: 1.0
+  seg_gap_max: 20
+  min_bins_per_arm: 30
+  noise_ref_mad: 1.0
+  bg_min_bin_count: 2000
+  focal_subseg_hi_abs: 2.0
+  noisy_bin_mad: 1.4
+  noise_factor_max: 0.85
+  weak_noise_train_oof:
+    enabled: true
+    noise_mad_threshold: 1.547902
+    rescue_peak_snr: 3.5
+  focal_local_excess_mode: dual
+  focal_local_peak_delta_min: 3.0
+  focal_local_mean_delta_min: 1.5
+  focal_local_spike_base_max: 3.0
+  focal_local_spike_peak_delta_min: 5.0
+  focal_local_spike_snr_min: 3.0
+  focal_local_spike_delta_snr_min: 4.0
+  focal_broad_overlap_min: 0.5
+  cfdna_diluted_peak_max: 12.0
+  cfdna_diluted_amp_min: 2.3
+  cfdna_diluted_L_min: 80
+  cfdna_diluted_density_min: 0.15
+  cfdna_diluted_min_peak_bins: 2
+  cfdna_diluted_merge_gap_max: 30
+  cfdna_diluted_merge_lo_abs: 1.0
+  cfdna_diluted_merge_zero_abs: 0.5
+  cfdna_diluted_seed_peak_min: 3.5
+  cfdna_diluted_bin_seed_min: 4.0
+  cfdna_diluted_seed_nms_bin: 15
+  focal_local_embedded_base_min: 15.0
+  focal_local_embedded_peak_delta_min: 4.0
+  focal_local_embedded_peak_delta_max: 5.5
+  focal_local_embedded_mean_delta_min: 3.0
+  cfdna_conc_mean_min: 1.0
+  cfdna_conc_frac_z3_min: 0.0
+  cfdna_conc_z3_thr: 2.0

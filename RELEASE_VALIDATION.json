@@ -1,0 +1,32 @@
+{
+  "version": "1.0.1",
+  "author": "Yujin Jeon",
+  "license": "MIT",
+  "release_type": "source-only",
+  "distributed_data_files": 0,
+  "synthetic_example": {
+    "distribution": "generator source only",
+    "source": "seeded simulation; no human measurements",
+    "presets_tested": [
+      "20G",
+      "100G",
+      "WGS"
+    ],
+    "expected_label": "CNV+_strong",
+    "expected_prediction": 1
+  },
+  "validation": {
+    "pytest": {
+      "passed": 55,
+      "failed": 0
+    },
+    "python_syntax": "passed",
+    "r_syntax": "passed",
+    "private_identifiers_and_endpoints_scan": "no findings",
+    "text_only_allowlist": "passed"
+  },
+  "limitations": [
+    "The BAM-to-QDNAseq workflow was not exercised with a real BAM.",
+    "Synthetic checks establish software execution, not analytical or clinical performance."
+  ]
+}

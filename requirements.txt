@@ -1,0 +1,9 @@
+# Python dependencies for cfDNA CNV caller
+# Tested on Python 3.10+
+
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7
+openpyxl>=3.1        # .xlsx read for clinical metadata
+PyYAML>=6.0          # config.yaml loader
